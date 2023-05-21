@@ -7,7 +7,7 @@ st.title("ข้อมูลคัดกรองภาพเอกซเรย�
 
 @st.cache_data(ttl=3600)
 def load_data():
-	df_froz =pd.read_csv("checkup.csv", error_bad_lines=False)
+	df_froz =pd.read_csv("http://sigj.atwebpages.com/check/check2.csv", error_bad_lines=False)
 	return df_froz
 
 df_froz=load_data()
